@@ -2,8 +2,11 @@ import os
 import sys
 import subprocess
 
-# Install joblib dynamically
-subprocess.check_call([sys.executable, "-m", "pip", "install", "joblib"])
+print("Python executable:", sys.executable)
+print("Python version:", sys.version)
+print("Installed packages:")
+subprocess.check_call([sys.executable, "-m", "pip", "freeze"])
+
 
 import streamlit as st
 import pandas as pd
