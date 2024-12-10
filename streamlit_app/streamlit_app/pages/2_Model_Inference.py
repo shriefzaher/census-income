@@ -1,13 +1,3 @@
-import os
-import sys
-import subprocess
-
-print("Python executable:", sys.executable)
-print("Python version:", sys.version)
-print("Installed packages:")
-subprocess.check_call([sys.executable, "-m", "pip", "freeze"])
-
-
 import streamlit as st
 import pandas as pd
 import joblib
