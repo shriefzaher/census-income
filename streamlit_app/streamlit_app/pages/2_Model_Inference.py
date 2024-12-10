@@ -1,4 +1,9 @@
-pip install joblib
+import os
+import sys
+import subprocess
+
+# Install joblib dynamically
+subprocess.check_call([sys.executable, "-m", "pip", "install", "joblib"])
 
 import streamlit as st
 import pandas as pd
